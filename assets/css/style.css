@@ -63,20 +63,29 @@
 }
 /*Body CSS*/
 .body {
-    background-image: url("assets/images/GreyBackground.png");
+    background-image: url("../images/YellowBackground.png");
+}
+
+.body:after {
+    display: table;
+    content: "";
+    clear: both;
 }
 
 .bodycontent {
     width: 960px;
+    height: 100vh;
     margin: auto;
+    padding: 35px 0px;
 }
 /*Sidebar CSS*/
 sidebar {
     width: 200px;
     height: 200px;
     float: right;
-    border: whitesmoke solid 2px;
+    border: whitesmoke solid 3px;
     padding: 0px 30px;
+    background-color: white;
 }
 
 #contact {
@@ -92,16 +101,14 @@ sidebar {
 .contactlinks {
     text-align: center;
 }
-
-/*.socialimages {
-    border: outset 2px whitesmoke;
-    width: 35px;
-    height: 35px;*/
-}
 /*Main Content CSS*/
 section {
-    width: 650px;
-    border: whitesmoke solid 2px;
+    width: 590px;
+    border: whitesmoke solid 3px;
+    float: left;
+    margin-bottom: 100px;
+    background-color: white;
+    padding: 0px 30px;
 }
 .contentTitle {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -115,9 +122,10 @@ section {
     padding: 26px 38px;
 }
 
-.pic {
+#pic {
     float: left;
     display: inline-block;
+    padding: 0px 20px;
 }
 
 .text {
