@@ -2,6 +2,9 @@
     margin: 0;
 }
 
+hr {
+    border: 2px solid gainsboro;
+}
 /* Header CSS*/
 #header {
     height: 87px;
@@ -115,7 +118,7 @@ section {
     color: cadetblue;
     display: inline-block;
     text-align: center;
-    padding: 26px 38px;
+    padding: 26px 0px;
 }
 /*About Me CSS*/
 .aboutcontent {
@@ -125,15 +128,51 @@ section {
 #pic {
     float: left;
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 30px 0px 0px;
 }
 
 .text {
     display: inline-block;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: gray;
+    position: relative;
     line-height: 35px;
 }
+
+.text p {
+    position: relative;
+    top: -10px;
+}
+/* Portfolio CSS  */
+.portlinks {
+    position: relative;
+    width: 40%;
+}
+
+.portlinks:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.portimages {  
+  width: 100%; 
+ }
+ 
+ .text-block { 
+    position: absolute; 
+    top: 50px; 
+    left: 0; 
+    width: 100%;  
+ }
+
+ .left {
+     float: left;
+ }
+ 
+ .right {
+     float: right;
+ }
 /* Footer CSS*/
 footer {
     height: 84px;
@@ -155,9 +194,9 @@ footer {
     line-height: 84px;
 }
 /*Portfolio CSS*/
-.portlinks {
+/* .portlinks {
     postion: relative;
-}
+} */
 
 .text-block {
 }
